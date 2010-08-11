@@ -1,0 +1,36 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TalkBot/SpeechItemTableController.cs" ctype="Workbench">
+    <Files>
+      <File FileName="TalkBot/IPhoneViewController.xib.cs" Line="50" Column="33" />
+      <File FileName="TalkBot/SpeechItem.cs" Line="23" Column="10" />
+      <File FileName="TalkBot/SpeechItemTableController.cs" Line="97" Column="42" />
+      <File FileName="TalkBot/Main.cs" Line="32" Column="25" />
+      <File FileName="TalkBot/FliteWrapper.cs" Line="13" Column="34" />
+      <File FileName="TalkBot/readme.txt" Line="10" Column="26" />
+      <File FileName="TalkBot/license.txt" Line="2" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="TalkBot" expanded="True" selected="True">
+            <Node name="IPhoneViewController.xib" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches ctype="PinnedWatchStore" />
+</Properties>

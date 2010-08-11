@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C20D72F-2CC7-4E5B-ADE5-918049909A39}</ProjectGuid>
+    <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>TalkBot</RootNamespace>
+    <MainNibFile>MainWindow.xib</MainNibFile>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <BundleVersion>1.1</BundleVersion>
+    <BundleDisplayName>Talk Bot</BundleDisplayName>
+    <MainNibFileIPad>MainWindowIPad.xib</MainNibFileIPad>
+    <BundleIcon>Icon57.png</BundleIcon>
+    <BundleIconHigh>Icon114.png</BundleIconHigh>
+    <BundleIconSpotlight>Icon29.png</BundleIconSpotlight>
+    <BundleIconSpotlightHigh>Icon58.png</BundleIconSpotlightHigh>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>True</MtouchDebug>
+    <MtouchSdkVersion>3.0</MtouchSdkVersion>
+    <MtouchMinimumOS>3.0</MtouchMinimumOS>
+    <MtouchI18n />
+    <AssemblyName>FliteTestApp</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchSdkVersion>4.0</MtouchSdkVersion>
+    <MtouchI18n />
+    <MtouchMinimumOS>4.0</MtouchMinimumOS>
+    <AssemblyName>FliteTestApp</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchDebug>True</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchSdkVersion>4.0</MtouchSdkVersion>
+    <MtouchMinimumOS>4.0</MtouchMinimumOS>
+    <MtouchI18n />
+    <MtouchExtraArgs>-gcc_flags "-L${ProjectDir} -lflite_cmu_us_kal16 -lflite_usenglish -lflite_cmulex -lflite -all_load"</MtouchExtraArgs>
+    <AssemblyName>TalkBot</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>False</MtouchDebug>
+    <MtouchExtraArgs>-gcc_flags "-L${ProjectDir} -lflite_cmu_us_kal16 -lflite_usenglish -lflite_cmulex -lflite -all_load"</MtouchExtraArgs>
+    <MtouchSdkVersion>4.0</MtouchSdkVersion>
+    <MtouchI18n />
+    <MtouchMinimumOS>4.0</MtouchMinimumOS>
+    <AssemblyName>TalkBot</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <MtouchMinimumOS>4.0</MtouchMinimumOS>
+    <MtouchI18n />
+    <MtouchDebug>False</MtouchDebug>
+    <CodesignProvision>55B216A9-3AB8-429D-B929-FEEFED708552</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <MtouchSdkVersion>4.0</MtouchSdkVersion>
+    <MtouchExtraArgs>-gcc_flags "-L${ProjectDir} -lflite_cmu_us_kal16 -lflite_usenglish -lflite_cmulex -lflite -all_load"</MtouchExtraArgs>
+    <AssemblyName>TalkBot</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.xib.designer.cs">
+      <DependentUpon>MainWindow.xib</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="IPhoneViewController.xib.cs">
+      <DependentUpon>IPhoneViewController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="IPhoneViewController.xib.designer.cs">
+      <DependentUpon>IPhoneViewController.xib</DependentUpon>
+    </Compile>
+    <Compile Include="FliteWrapper.cs" />
+    <Compile Include="SpeechItem.cs" />
+    <Compile Include="SpeechItemTableController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainWindow.xib" />
+    <Page Include="IPhoneViewController.xib" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties InternalTargetFrameworkVersion="IPhone">
+        <Policies>
+          <TextStylePolicy FileWidth="120" inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp" />
+          <CSharpFormattingPolicy inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <None Include="libflite_cmu_us_kal16.a" />
+    <None Include="libflite_cmulex.a" />
+    <None Include="libflite_usenglish.a" />
+    <None Include="libflite.a" />
+    <None Include="Info.plist" />
+    <None Include="readme.txt" />
+    <None Include="license.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="textboxImage.png" />
+    <Content Include="grayGradBkg.png" />
+    <Content Include="speakerSmall.png" />
+    <Content Include="speakButton.png" />
+    <Content Include="clearButton.png" />
+    <Content Include="Icon29.png" />
+    <Content Include="Icon58.png" />
+    <Content Include="Icon114.png" />
+    <Content Include="Icon57.png" />
+    <Content Include="Default.png" />
+  </ItemGroup>
+</Project>
