@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkBot", "TalkBot\TalkBot.csproj", "{2C20D72F-2CC7-4E5B-ADE5-918049909A39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Debug|iPhone.Build.0 = Debug|iPhone
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Release|iPhone.ActiveCfg = Release|iPhone
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Release|iPhone.Build.0 = Release|iPhone
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{2C20D72F-2CC7-4E5B-ADE5-918049909A39}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = TalkBot\TalkBot.csproj
+	EndGlobalSection
+EndGlobal

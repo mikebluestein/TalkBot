@@ -1,5 +1,5 @@
 
-This source code is licensed under the terms of the MIT X11 license except as noted below.
+This source code is licensed under the terms of the MIT license except as noted below.
 
 Flite licensed according to the following:
 
