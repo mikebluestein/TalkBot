@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Talk Bot</string>
+	<string name="menu_save">Save Item</string>
+	<string name="menu_delete">Delete Item</string>
+	<string name="speak">Speak</string>
+	<string name="select_to_delete">Please select an item to delete.</string>
+	<string name="enter_text_to_save">Please enter text to save.</string>
+	<string name="enter_text_to_speak">Please enter some text to speak.</string>
+</resources>
